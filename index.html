@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="An amazing app for finding weather of your desired place"
+    />
+    <meta name="robots" content="index, follow" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lato:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Weather App | Find Weather of your place</title>
+  </head>
+  <body>
+    <header class="nav-header">
+      <nav>
+        <h1 id="logo">Weather App</h1>
+        <span class="weather-app-icon">
+          <i class="fa-solid fa-bolt"></i>
+        </span>
+      </nav>
+    </header>
+    <main>
+      <section id="weather-form-section">
+        <div class="weather-img">
+          <img src="./img/weather.svg" alt="" />
+        </div>
+        <div class="weather-form">
+          <div class="weather-form-wrapper">
+            <header>
+              <h3>Get weather of your place.</h3>
+            </header>
+            <form>
+              <div class="country-name-input">
+                <input
+                  type="text"
+                  name="country-name"
+                  id="country-name"
+                  placeholder="Enter country e.g. India"
+                  minlength="3"
+                  list="countrynames"
+                  autocomplete="off"
+                  required
+                />
+                <datalist id="countrynames">
+                  <!-- <option value="Adil"></option> -->
+                </datalist>
+              </div>
+              <div class="place-name-input">
+                <input
+                  type="text"
+                  name="place-name"
+                  id="place-name"
+                  placeholder="Enter place e.g. Meerut"
+                  minlength="3"
+                  list="placenames"
+                  autocomplete="off"
+                  required
+                />
+                <datalist id="placenames">
+                  <!-- <option value="Edge"></option> -->
+                </datalist>
+              </div>
+              <button class="get-weather-btn" type="submit">
+                Get Weather
+                <!-- <div class="loader"></div> -->
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js"
+      integrity="sha512-yFjZbTYRCJodnuyGlsKamNE/LlEaEAxSUDe5+u61mV8zzqJVFOH7TnULE2/PP/l5vKWpUNnF4VGVkXh3MjgLsg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="./app.js"></script>
+  </body>
+</html>
